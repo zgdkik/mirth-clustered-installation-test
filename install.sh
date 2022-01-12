@@ -51,7 +51,7 @@ echo "Renaming folder ..."
 mv /tmp/mirthstuff/Mirth\ Connect/ /tmp/mirthstuff/mirthconnect_3_12_0/
 
 echo "Extracting Clustering plugin ..."
-unzip -q /home/kaur/clusteringadvanced-3.12.0.zip -d /tmp/mirthstuff/mirthconnect_3_12_0/extensions/
+unzip -q /home/kaur/clusteringadvanced-3.12.0.b2560.zip -d /tmp/mirthstuff/mirthconnect_3_12_0/extensions/
 
 echo "Setting server.id ..."
 mkdir /tmp/mirthstuff/mirthconnect_3_12_0/appdata/
