@@ -47,7 +47,6 @@ echo "Adding licence key ..."
 cat /home/kaur/mirth_licence_key >> /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
 
 echo "Mirth 3.10.1 installation complete!"
-cd
 
 echo ""
 echo "---"
