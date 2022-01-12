@@ -47,8 +47,7 @@ echo "Adding licence key ..."
 cat /home/kaur/mirth_licence_key >> /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
 
 echo "Mirth 3.10.1 installation complete!"
-
-
+cd
 
 echo ""
 echo "---"
@@ -75,12 +74,12 @@ mkdir /tmp/mirthstuff/mirthconnect_3_12_0/appdata/
 cp ${PWD}/$NODE/server.id /tmp/mirthstuff/mirthconnect_3_12_0/appdata/
 
 echo "Setting propeties ..."
-sed -i 's/database = derby/database = postgres/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
-sed -i 's/database.url = jdbc:derby:${dir.appdata}\/mirthdb;create=true/database.url = jdbc:postgresql:\/\/172.23.2.63:5432\/mirthconnect-cluster/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
-sed -i 's/database.username =/database.username = mirthuser/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
-sed -i 's/database.password =/database.password = mirthuserpw/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
+sed -i 's/database = derby/database = postgres/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
+sed -i 's/database.url = jdbc:derby:${dir.appdata}\/mirthdb;create=true/database.url = jdbc:postgresql:\/\/172.23.2.63:5432\/mirthconnect-cluster/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
+sed -i 's/database.username =/database.username = mirthuser/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
+sed -i 's/database.password =/database.password = mirthuserpw/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
 
 echo "Adding licence key ..."
-cat /home/kaur/mirth_licence_key >> /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
+cat /home/kaur/mirth_licence_key >> /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
 
 echo "Mirth 3.12.0 installation complete!"
