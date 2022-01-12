@@ -16,7 +16,7 @@ wget -O /tmp/mirthstuff/mirth_3_10_1.tar.gz https://s3.amazonaws.com/downloads.m
 echo "Extracting Mirth ..."
 tar -xf /tmp/mirthstuff/mirth_3_10_1.tar.gz
 echo "Renaming folder ..."
-mv /tmp/mirthstuff/"Mirth Connect" /tmp/mirthstuff/mirthconnect_3_10_1
+mv /tmp/mirthstuff/"Mirth Connect"/ /tmp/mirthstuff/mirthconnect_3_10_1/
 echo "Extracting Clustering plugin ..."
 unzip -q /tmp/mirthstuff/clusteringadvanced-3.10.1.b291.zip -d /tmp/mirthstuff/mirthconnect_3_10_1/extensions/
 echo "Setting server.id ..."
@@ -31,7 +31,7 @@ wget -O /tmp/mirthstuff/mirth_3_12_0.tar.gz https://s3.amazonaws.com/downloads.m
 echo "Extracting Mirth ..."
 tar -xf /tmp/mirthstuff/mirth_3_12_0.tar.gz
 echo "Renaming folder ..."
-mv /tmp/mirthstuff/"Mirth Connect" /tmp/mirthstuff/mirthconnect_3_12_0
+mv /tmp/mirthstuff/"Mirth Connect"/ /tmp/mirthstuff/mirthconnect_3_12_0/
 echo "Extracting Clustering plugin ..."
 unzip -q /tmp/mirthstuff/clusteringadvanced-3.12.0.zip -d /tmp/mirthstuff/mirthconnect_3_12_0/extensions/
 echo "Setting server.id ..."
