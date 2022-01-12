@@ -22,7 +22,7 @@ echo "Downloading Mirth 3.10.1 ..."
 wget -O /tmp/mirthstuff/mirth_3_10_1.tar.gz https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.10.1.b280/mirthconnect-3.10.1.b280-unix.tar.gz
 
 echo "Extracting Mirth ..."
-tar -xvf /tmp/mirthstuff/mirth_3_10_1.tar.gz -C /tmp/mirthstuff/
+tar -xf /tmp/mirthstuff/mirth_3_10_1.tar.gz -C /tmp/mirthstuff/
 
 echo "Renaming folder ..."
 mv /tmp/mirthstuff/Mirth\ Connect/ /tmp/mirthstuff/mirthconnect_3_10_1/
@@ -31,11 +31,14 @@ echo "Extracting Clustering plugin ..."
 unzip -q /home/kaur/clusteringadvanced-3.10.1.b291.zip -d /tmp/mirthstuff/mirthconnect_3_10_1/extensions/
 
 echo "Setting server.id ..."
+mkdir /tmp/mirthstuff/mirthconnect_3_10_1/appdata/
 cp ${PWD}/$NODE/server.id /tmp/mirthstuff/mirthconnect_3_10_1/appdata/
 
 echo "Mirth 3.10.1 installation complete!"
 
-echo "\n---\n"
+echo ""
+echo "---"
+echo ""
 
 # Download Mirth 3.12.0
 echo "Downloading Mirth 3.12.0 ..."
@@ -51,5 +54,6 @@ echo "Extracting Clustering plugin ..."
 unzip -q /home/kaur/clusteringadvanced-3.12.0.zip -d /tmp/mirthstuff/mirthconnect_3_12_0/extensions/
 
 echo "Setting server.id ..."
+mkdir /tmp/mirthstuff/mirthconnect_3_12_0/appdata/
 cp ${PWD}/$NODE/server.id /tmp/mirthstuff/mirthconnect_3_12_0/appdata/
 echo "Mirth 3.12.0 installation complete!"
