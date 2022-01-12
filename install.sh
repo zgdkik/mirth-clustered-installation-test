@@ -25,6 +25,7 @@ echo "Mirth 3.10.1 installation complete!"
 
 echo ""
 
+
 # Download Mirth 3.12.0
 echo "Downloading Mirth 3.12.0 ..."
 wget -O /tmp/mirthstuff/mirth_3_12_0.tar.gz https://s3.amazonaws.com/downloads.mirthcorp.com/connect/3.12.0.b2650/mirthconnect-3.12.0.b2650-unix.tar.gz
