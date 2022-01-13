@@ -79,6 +79,8 @@ sed -i 's/database = derby/database = postgres/' /tmp/mirthstuff/mirthconnect_3_
 sed -i 's/database.url = jdbc:derby:${dir.appdata}\/mirthdb;create=true/database.url = jdbc:postgresql:\/\/172.23.2.63:5432\/mirthconnect-cluster/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
 sed -i 's/database.username =/database.username = mirthuser/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
 sed -i 's/database.password =/database.password = mirthuserpw/' /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
+sed -i 's/keystore.storepass = .*/keystore.storepass = storepass1337/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
+sed -i 's/keystore.keypass = .*/keystore.keypass = keypass1337/' /tmp/mirthstuff/mirthconnect_3_10_1/conf/mirth.properties
 
 echo "Adding licence key ..."
 cat /home/kaur/mirth_licence_key >> /tmp/mirthstuff/mirthconnect_3_12_0/conf/mirth.properties
