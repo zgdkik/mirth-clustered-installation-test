@@ -3,3 +3,6 @@ run10:
 
 run12:
 	/tmp/mirthstuff/mirthconnect_3_12_0/mcserver
+
+reset:
+	rm -rf /tmp/mirthstuff
